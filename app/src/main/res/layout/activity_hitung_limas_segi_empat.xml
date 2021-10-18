@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/tes_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        tools:context="com.newbie.irhamdzuhri.HitungBangunRuangDanDatar.MainActivity">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp">
+
+            <TableLayout
+                android:id="@+id/table_gambar"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:background="@android:color/white"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/gambar"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/limas_segi_empat" />
+            </TableLayout>
+
+            <TableLayout
+                android:id="@+id/table"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_toEndOf="@+id/table_gambar"
+                android:background="@android:color/white"
+                android:padding="15dp">
+
+                <TextView
+                    android:id="@+id/luas_alas"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="#fff"
+                    android:text="@string/luas_alas"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/rumus_luas"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="2"
+                    android:background="#fff"
+                    android:text="panjang x lebar" />
+
+                <TextView
+                    android:id="@+id/luas_sisi_tegak"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="#fff"
+                    android:text="@string/luas_sisi_tegak"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_marginBottom="4dp"
+                    android:layout_weight="1"
+                    android:background="#fff"
+                    android:text="(alas x tinggi) / 2" />
+
+            </TableLayout>
+
+            <TableLayout
+                android:id="@+id/table_bawah"
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:layout_below="@+id/table_gambar"
+                android:background="@android:color/white"
+                android:padding="8dp">
+
+                <TextView
+                    android:id="@+id/luas"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="#fff"
+                    android:text="@string/luas_limas"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="2"
+                    android:background="#fff"
+                    android:text="luas alas + (4 x luas sisi tegak)" />
+
+                <TextView
+                    android:id="@+id/volume"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="#fff"
+                    android:text="@string/volume"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="#fff"
+                    android:text="1/4 x luas alas x tinggi" />
+
+            </TableLayout>
+        </RelativeLayout>
+
+        <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/radio_hitung_luas_alas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioButtonClicked"
+                android:text="@string/hitung_luas_alas" />
+
+            <RadioButton
+                android:id="@+id/radio_hitung_luas_sisi_tegak"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioButtonClicked"
+                android:text="@string/hitung_luas_sisi_tegak" />
+
+            <RadioButton
+                android:id="@+id/radio_hitung_luas_limas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioButtonClicked"
+                android:text="@string/hitung_luas_limas" />
+
+            <RadioButton
+                android:id="@+id/radio_hitung_volume"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioButtonClicked"
+                android:text="@string/hitung_volume" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/text_view_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text=""
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/edt_text_view_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/zero"
+            android:inputType="numberDecimal" />
+
+        <TextView
+            android:id="@+id/text_view_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/edt_text_view_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/zero"
+            android:inputType="numberDecimal" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_hitung"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_button"
+                android:onClick="hitung"
+                android:text="@string/hitung"
+                android:textColor="@android:color/white" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txt_hasil"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:gravity="center_horizontal"
+            android:lines="2"
+            android:text="@string/hasil"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+</ScrollView>

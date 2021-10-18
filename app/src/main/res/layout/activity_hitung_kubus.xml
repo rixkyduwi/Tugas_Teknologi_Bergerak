@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        tools:context="com.newbie.irhamdzuhri.HitungBangunRuangDanDatar.MainActivity">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp">
+
+            <TableLayout
+                android:id="@+id/table_gambar"
+                android:layout_width="150dp"
+                android:layout_height="140dp"
+                android:background="@android:color/white">
+
+                <ImageView
+                    android:id="@+id/gambar"
+                    android:layout_width="150dp"
+                    android:layout_height="140dp"
+                    android:layout_marginEnd="8dp"
+                    android:src="@drawable/kubus" />
+            </TableLayout>
+
+            <TableLayout
+                android:id="@+id/table"
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                android:layout_toEndOf="@+id/table_gambar"
+                android:background="@android:color/white"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/luas_permukaan"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:text="@string/luas_permukaan"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/rumus_luas"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_weight="1"
+                    android:text="6 x ( rusuk x rusuk )" />
+
+                <TextView
+                    android:id="@+id/keliling"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:text="@string/keliling"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/rumus_keliling"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_weight="1"
+                    android:text="12 x rusuk" />
+
+                <TextView
+                    android:id="@+id/volume"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:text="@string/volume"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:text="rusuk x rusuk x rusuk" />
+            </TableLayout>
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/rusuk"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/edt_rusuk"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/zero"
+            android:inputType="numberDecimal" />
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_hitung_luas"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_button"
+                android:onClick="hitung_luas"
+                android:text="Hitung\nLuas"
+                android:textColor="@android:color/white" />
+
+            <Button
+                android:id="@+id/btn_hitung_keliling"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_button"
+                android:onClick="hitung_keliling"
+                android:text="@string/hitung_keliling"
+                android:textColor="@android:color/white" />
+
+            <Button
+                android:id="@+id/btn_hitung_volume"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_button"
+                android:onClick="hitung_volume"
+                android:text="@string/hitung_volume"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txt_hasil"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="8dp"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:lines="2"
+            android:text="@string/hasil"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+</ScrollView>

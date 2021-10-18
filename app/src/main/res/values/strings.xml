@@ -1,0 +1,71 @@
+<resources>
+    //lain-lain
+    <string name="app_name">Hitung Bangun Ruang dan Datar</string>
+    <string name="text_gambar">Gambar</string>
+
+    //perhitungan
+    <string name="hitung_luas">Hitung Luas</string>
+    <string name="hitung_keliling">Hitung Keliling</string>
+    <string name="hitung_volume">Hitung Volume</string>
+    <string name="hasil">Hasil</string>
+    <string name="luas">Luas :</string>
+    <string name="keliling">Keliling :</string>
+    <string name="volume">Volume :</string>
+    <string name="hitung">Hitung</string>
+
+    //atribute
+    <string name="panjang">Panjang</string>
+    <string name="lebar">Lebar</string>
+    <string name="tinggi">Tinggi</string>
+    <string name="alas">Alas</string>
+    <string name="jari_jari">Jari - Jari</string>
+    <string name="zero">0</string>
+    <string name="sisi">Sisi</string>
+    <string name="sisiA">Sisi A</string>
+    <string name="sisiB">Sisi B</string>
+    <string name="sisiC">Sisi C</string>
+    <string name="sisiAB">Sisi AB</string>
+    <string name="sisiCD">Sisi CD</string>
+    <string name="sisiBC">Sisi BC</string>
+    <string name="sisiDA">Sisi DA</string>
+    <string name="diagonal_horizontal">Diagonal Horizontal</string>
+    <string name="diagonal_vertical">Diagonal Vertikal</string>
+    <string name="sisi_satu">Sisi 1</string>
+    <string name="sisi_dua">Sisi 2</string>
+    <string name="rusuk">Rusuk</string>
+    <string name="luas_permukaan">Luas Permukaan</string>
+
+    //bangun datar
+    <string name="bangun_datar">Bangun Datar</string>
+    <string name="persegi_panjang">Persegi Panjang</string>
+    <string name="lingkaran">Lingkaran</string>
+    <string name="segitiga">Segitiga</string>
+    <string name="persegi">Persegi</string>
+    <string name="trapesium">Trapesium</string>
+    <string name="layang_layang">Layang Layang</string>
+    <string name="belah_ketupat">Belah Ketupat</string>
+
+    //bangun ruang
+    <string name="balok">Balok</string>
+    <string name="bola">Bola</string>
+    <string name="tabung">Tabung</string>
+    <string name="kubus">Kubus</string>
+    <string name="luasKerucut">Kerucut</string>
+    <string name="default_text">Default Text</string>
+    <string name="polymorphism">Polymorphism</string>
+    <string name="garis_lukis">Garis Lukis</string>
+    <string name="bangun_ruang">Bangun Ruang</string>
+
+    //other
+    <string name="share">Share</string>
+    <string name="masukan_nomor">Masukan Semua Nomor Yang Akan Dihitung</string>
+    <string name="jajar_genjang">Jajar Genjang</string>
+    <string name="hitung_luas_alas">Hitung Luas Alas</string>
+    <string name="hitung_luas_sisi_tegak">Hitung Luas Sisi Tegak</string>
+    <string name="luas_alas">Luas Alas :</string>
+    <string name="luas_sisi_tegak">Luas Sisi Tegak :</string>
+    <string name="luas_limas">Luas Limas :</string>
+    <string name="limas_segi_empat">Limas Segi Empat</string>
+    <string name="hitung_luas_limas">Hitung Luas Limas</string>
+
+</resources>
