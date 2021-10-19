@@ -18,6 +18,27 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".HitungLingkaranActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".PilihBangunRuangActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".PilihBangunDatarActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".HitungPersegiActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".HitungSegitigaActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".HitungKubusActivity"
+            android:screenOrientation="portrait" />
     </application>
 
 </manifest>

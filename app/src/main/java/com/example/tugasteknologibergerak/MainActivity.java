@@ -12,7 +12,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_hitung_kubus);
+        setContentView(R.layout.activity_main);
 
         initial();
 
@@ -29,13 +29,11 @@ public class MainActivity extends AppCompatActivity {
         public void pilihBangunRuang (View view){
             Intent intent = new Intent(MainActivity.this, PilihBangunRuangActivity.class);
             startActivity(intent);
-            setContentView(R.layout.activity_pilih_bangun_ruang);
         }
 
         public void pilihBangunDatar (View view){
             Intent intent = new Intent(MainActivity.this, PilihBangunDatarActivity.class);
             startActivity(intent);
-            setContentView(R.layout.activity_pilih_bangun_datar);
         }
 
 

@@ -55,11 +55,11 @@ public class HitungLingkaranActivity extends AppCompatActivity {
         }
     }
 
-    public void hitung_keliling(View view) {
+    public void hitung_lingkaran_keliling(View view) {
         try {
             jari = Double.parseDouble(edtJariJari.getText().toString());
             Lingkaran lingkaran = new Lingkaran(jari);
-            txtHasil.setText(String.valueOf("Hasil :\nKeliling = " + lingkaran.hitung_keliling()));
+            txtHasil.setText(String.valueOf("Hasil :\n Keliling = "+ lingkaran.hitung_kelilingg()));
 
 
             //panjang = Double.parseDouble(edtPanjang.getText().toString());

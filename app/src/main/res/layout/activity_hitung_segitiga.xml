@@ -3,7 +3,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <LinearLayout xmlns:tools="http://schemas.android.com/tools"
+    <LinearLayout
+        xmlns:tools="http://schemas.android.com/tools"
         android:id="@+id/tes_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -12,28 +13,40 @@
         android:paddingLeft="@dimen/activity_horizontal_margin"
         android:paddingRight="@dimen/activity_horizontal_margin"
         android:paddingTop="@dimen/activity_vertical_margin"
+        android:background="@drawable/biru"
         tools:context="com.newbie.irhamdzuhri.HitungBangunRuangDanDatar.MainActivity">
 
         <RelativeLayout
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="8dp">
 
             <ImageView
                 android:id="@+id/gambar"
-                android:layout_width="150dp"
-                android:layout_height="120dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp"
                 android:src="@drawable/segitiga" />
 
             <TableLayout
                 android:id="@+id/table"
-                android:layout_width="match_parent"
-                android:layout_height="120dp"
+                android:layout_width="wrap_content"
+                android:layout_height="150dp"
                 android:layout_toEndOf="@+id/gambar"
                 android:background="@android:color/white"
                 android:padding="10dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:text="Farid ari wibowo" />
 
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:text="nim: A12.209.06251"
+                    android:textSize="12dp" />
                 <TextView
                     android:id="@+id/luas"
                     android:layout_width="match_parent"
@@ -50,6 +63,7 @@
                     android:layout_marginBottom="8dp"
                     android:layout_weight="1"
                     android:background="#fff"
+                    android:textSize="10dp"
                     android:text="( alas x tinggi ) / 2" />
 
                 <TextView
@@ -66,6 +80,7 @@
                     android:layout_height="0dp"
                     android:layout_weight="1"
                     android:background="#fff"
+                    android:textSize="10dp"
                     android:text="sisi A + sisi B + sisi C" />
 
             </TableLayout>

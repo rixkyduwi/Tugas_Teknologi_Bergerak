@@ -8,38 +8,50 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:paddingBottom="@dimen/activity_vertical_margin"
+        android:background="@drawable/biru"
         android:paddingLeft="@dimen/activity_horizontal_margin"
         android:paddingRight="@dimen/activity_horizontal_margin"
         android:paddingTop="@dimen/activity_vertical_margin"
         tools:context="com.newbie.irhamdzuhri.HitungBangunRuangDanDatar.MainActivity">
 
         <RelativeLayout
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="8dp">
 
             <TableLayout
                 android:id="@+id/table_gambar"
-                android:layout_width="150dp"
-                android:layout_height="140dp"
-                android:background="@android:color/white">
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:background="@drawable/biru">
 
                 <ImageView
                     android:id="@+id/gambar"
-                    android:layout_width="150dp"
-                    android:layout_height="140dp"
-                    android:layout_marginEnd="8dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:src="@drawable/kubus" />
             </TableLayout>
 
             <TableLayout
                 android:id="@+id/table"
                 android:layout_width="match_parent"
-                android:layout_height="140dp"
+                android:layout_height="150dp"
                 android:layout_toEndOf="@+id/table_gambar"
                 android:background="@android:color/white"
-                android:padding="10dp">
+               android:paddingLeft="10dp"
+                android:layout_marginLeft="10dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:text="Farid ari wibowo" />
 
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:text="nim: A12.209.06251"
+                    android:textSize="12dp" />
                 <TextView
                     android:id="@+id/luas_permukaan"
                     android:layout_width="match_parent"
@@ -54,6 +66,7 @@
                     android:layout_height="0dp"
                     android:layout_marginBottom="8dp"
                     android:layout_weight="1"
+                    android:textSize="12dp"
                     android:text="6 x ( rusuk x rusuk )" />
 
                 <TextView
@@ -84,6 +97,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="0dp"
                     android:layout_weight="1"
+                    android:textSize="12dp"
                     android:text="rusuk x rusuk x rusuk" />
             </TableLayout>
         </RelativeLayout>
@@ -101,9 +115,6 @@
             android:layout_height="wrap_content"
             android:hint="@string/zero"
             android:inputType="numberDecimal" />
-
-
-
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -117,7 +128,7 @@
                 android:layout_weight="1"
                 android:background="@drawable/bg_button"
                 android:onClick="hitung_luas"
-                android:text="Hitung\nLuas"
+                android:text="@string/hitung_luas"
                 android:textColor="@android:color/white" />
 
             <Button

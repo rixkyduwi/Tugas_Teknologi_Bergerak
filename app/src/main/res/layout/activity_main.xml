@@ -16,18 +16,18 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="hitung"
+            android:text="Tugas Teknologi Bergerak Bangun Ruang dan Datar"
             android:textAlignment="center"
             android:textAllCaps="true"
             android:textColor="@color/colorPrimaryDark"
-            android:textSize="40sp"
+            android:textSize="20dp"
             android:textStyle="bold" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="16dp"
-            android:text="Bangun Ruang dan Datar"
+            android:text=" Farid Ari Wibowo_A12.2019.06251"
             android:textAlignment="center"
             android:textAllCaps="true"
             android:textColor="@color/colorPrimaryDark"
