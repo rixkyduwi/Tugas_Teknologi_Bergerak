@@ -39,14 +39,15 @@
                     android:layout_width="wrap_content"
                     android:layout_height="0dp"
                     android:layout_weight="1"
-                    android:text="@string/farid_ari_wibowo" />
+                    android:textSize="11sp"
+                    android:text="@string/nama" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="0dp"
                     android:layout_weight="1"
-                    android:text="@String/nim:_A12.209.06251"
-                    android:textSize="12sp" />
+                    android:text="@string/nim"
+                    android:textSize="11sp" />
 
                 <TextView
                     android:layout_width="match_parent"
@@ -59,20 +60,20 @@
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
                     android:layout_weight="1"
-                    android:text="@string/phi_x_r_x_r" />
+                    android:text="phi x r x r" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="0dp"
                     android:layout_weight="1"
-                    android:text="@string/keliling"
+                    android:text="keliling"
                     android:textStyle="bold" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="0dp"
                     android:layout_weight="1"
-                    android:text="@string/phi_x_2_x_r" />
+                    android:text="phi x 2 x r" />
             </TableLayout>
         </RelativeLayout>
 
@@ -88,8 +89,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/zero"
-            android:inputType="numberDecimal"
-            android:autofillHints="" />
+            android:inputType="numberDecimal" />
 
 
         <LinearLayout
@@ -106,8 +106,7 @@
                 android:onClick="hitung_luas"
                 android:text="@string/hitung_luas"
                 android:textColor="@android:color/white"
-                tools:ignore="UsingOnClickInXml"
-                style="?android:attr/buttonBarButtonStyle" />
+                tools:ignore="UsingOnClickInXml" />
 
             <Button
                 android:layout_width="0dp"
@@ -118,8 +117,7 @@
                 android:onClick="hitung_lingkaran_keliling"
                 android:text="@string/hitung_keliling"
                 android:textColor="@android:color/white"
-                tools:ignore="UsingOnClickInXml"
-                style="?android:attr/buttonBarButtonStyle" />
+                tools:ignore="UsingOnClickInXml" />
         </LinearLayout>
 
         <TextView

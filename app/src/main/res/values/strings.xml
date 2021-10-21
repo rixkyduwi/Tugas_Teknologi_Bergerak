@@ -37,17 +37,6 @@
     <string name="masukan_nomor">Masukan Semua Nomor Yang Akan Dihitung</string>
     <string name="nama">Farid ari wibowo</string>
     <string name="nim">nim: A12.209.06251</string>
-    <string name="lkubus">6 x ( rusuk x rusuk )</string>
-    <string name="_12_x_rusuk">12 x rusuk</string>
-    <string name="rusuk_x_rusuk_x_rusuk">rusuk x rusuk x rusuk</string>
-    <string name="gambarkubus">gambarkubus</string>
-    <string name="phi_x_r_x_r">Phi x (r x r)</string>
-    <string name="phi_x_2_x_r">Phi x (2 x r)</string>
-    <string name="spersegi">sisi x sisi</string>
-    <string name="kpersegi">4 x sisi</string>
-    <string name="sgtg">gambarsegitiga</string>
-    <string name="lsegitiga">( alas x tinggi ) / 2</string>
-    <string name="Ksegitiga">sisi A + sisi B + sisi C</string>
     <string name="pilih">Pilih</string>
     <string name="datar">Bangun Datar</string>
     <string name="lengkap">Farid Ari Wibowo_A12.2019.06251</string>

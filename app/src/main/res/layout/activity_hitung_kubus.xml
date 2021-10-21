@@ -30,7 +30,6 @@
                     android:id="@+id/gambar"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:contentDescription="@string/gambarkubus"
                     android:src="@drawable/kubus" />
             </TableLayout>
 
@@ -67,7 +66,7 @@
                     android:layout_marginBottom="8dp"
                     android:layout_weight="1"
                     android:textSize="12sp"
-                    android:text="@string/lkubus" />
+                    android:text="sisi x sisi" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -81,7 +80,7 @@
                     android:layout_height="0dp"
                     android:layout_marginBottom="8dp"
                     android:layout_weight="1"
-                    android:text="@string/_12_x_rusuk" />
+                    android:text="12 x rusuk" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -95,7 +94,7 @@
                     android:layout_height="0dp"
                     android:layout_weight="1"
                     android:textSize="12sp"
-                    android:text="@string/rusuk_x_rusuk_x_rusuk" />
+                    android:text="rusuk x rusuk x rusuk" />
             </TableLayout>
         </RelativeLayout>
 
@@ -110,7 +109,7 @@
             android:id="@+id/edt_rusuk"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/zero"
+            android:hint="0"
             android:inputType="numberDecimal"
             android:autofillHints="" />
         <LinearLayout
@@ -127,7 +126,6 @@
                 android:onClick="hitung_luas"
                 android:text="@string/hitung_luas"
                 android:textColor="@android:color/white"
-                style="?android:attr/buttonBarButtonStyle"
                 tools:ignore="UsingOnClickInXml" />
 
             <Button
@@ -139,8 +137,7 @@
                 android:onClick="hitung_keliling"
                 android:text="@string/hitung_keliling"
                 android:textColor="@android:color/white"
-                tools:ignore="UsingOnClickInXml"
-                style="?android:attr/buttonBarButtonStyle" />
+                tools:ignore="UsingOnClickInXml"/>
 
             <Button
                 android:layout_width="0dp"

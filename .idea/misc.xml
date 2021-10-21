@@ -17,8 +17,8 @@
         <entry key="..\:/Users/User/AndroidStudioProjects/TugasTeknologiBergerak/app/src/main/res/layout/persegifarid06251.xml" value="0.12771739130434784" />
         <entry key="..\:/Users/User/AndroidStudioProjects/TugasTeknologiBergerak/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1125" />
         <entry key="..\:/Users/rizky/AndroidStudioProjects/TugasTeknologiBergerak/app/src/main/res/layout/activity_hitung_kubus.xml" value="0.3273657289002558" />
-        <entry key="..\:/Users/rizky/AndroidStudioProjects/TugasTeknologiBergerak/app/src/main/res/layout/activity_hitung_lingkaran.xml" value="0.25" />
-        <entry key="..\:/Users/rizky/AndroidStudioProjects/TugasTeknologiBergerak/app/src/main/res/layout/activity_hitung_persegi.xml" value="0.28685714285714287" />
+        <entry key="..\:/Users/rizky/AndroidStudioProjects/TugasTeknologiBergerak/app/src/main/res/layout/activity_hitung_lingkaran.xml" value="0.4466666666666667" />
+        <entry key="..\:/Users/rizky/AndroidStudioProjects/TugasTeknologiBergerak/app/src/main/res/layout/activity_hitung_persegi.xml" value="0.23638778220451528" />
         <entry key="..\:/Users/rizky/AndroidStudioProjects/TugasTeknologiBergerak/app/src/main/res/layout/activity_hitung_segitiga.xml" value="0.22" />
         <entry key="..\:/Users/rizky/AndroidStudioProjects/TugasTeknologiBergerak/app/src/main/res/layout/activity_main.xml" value="0.16666666666666666" />
         <entry key="..\:/Users/rizky/AndroidStudioProjects/TugasTeknologiBergerak/app/src/main/res/layout/activity_pilih_bangun_datar.xml" value="0.22" />
@@ -32,5 +32,12 @@
   </component>
   <component name="ProjectType">
     <option name="id" value="Android" />
+  </component>
+  <component name="VisualizationToolProject">
+    <option name="state">
+      <ProjectState>
+        <option name="scale" value="0.22" />
+      </ProjectState>
+    </option>
   </component>
 </project>

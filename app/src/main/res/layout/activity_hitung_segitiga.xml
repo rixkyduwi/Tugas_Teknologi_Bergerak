@@ -13,7 +13,7 @@
         android:paddingRight="@dimen/activity_horizontal_margin"
         android:paddingTop="@dimen/activity_vertical_margin"
         android:background="@drawable/biru"
-        tools:context="com.example.tugasteknologibergerak.MainActivity">
+        tools:context="com.newbie.irhamdzuhri.HitungBangunRuangDanDatar.MainActivity">
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -26,7 +26,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp"
                 android:src="@drawable/segitiga"
-                android:contentDescription="@string/sgtg" />
+                android:contentDescription="segitiga" />
 
             <TableLayout
                 android:layout_width="wrap_content"
@@ -38,6 +38,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="0dp"
                     android:layout_weight="1"
+                    android:textSize="12sp"
                     android:text="@string/nama" />
 
                 <TextView
@@ -45,7 +46,7 @@
                     android:layout_height="0dp"
                     android:layout_weight="1"
                     android:text="@string/nim"
-                    android:textSize="12sp" />
+                    android:textSize="11sp" />
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
@@ -61,7 +62,7 @@
                     android:layout_weight="1"
                     android:background="#fff"
                     android:textSize="10sp"
-                    android:text="@string/lsegitiga"
+                    android:text="alas x tinggi / 2"
                     tools:ignore="SmallSp" />
 
                 <TextView
@@ -78,7 +79,7 @@
                     android:layout_weight="1"
                     android:background="#fff"
                     android:textSize="10sp"
-                    android:text="@string/Ksegitiga" />
+                    android:text="sisiA x sisiB x sisiC" />
 
             </TableLayout>
         </RelativeLayout>
@@ -93,16 +94,14 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:onClick="onRadioButtonClicked"
-                android:text="@string/hitung_luas"
-                tools:ignore="UsingOnClickInXml" />
+                android:text="@string/hitung_luas" />
 
             <RadioButton
                 android:id="@+id/radio_hitung_keliling"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:onClick="onRadioButtonClicked"
-                android:text="@string/hitung_keliling"
-                tools:ignore="UsingOnClickInXml" />
+                android:text="@string/hitung_keliling" />
         </RadioGroup>
 
         <TextView
@@ -118,8 +117,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/zero"
-            android:inputType="numberDecimal"
-            android:autofillHints="" />
+            android:inputType="numberDecimal" />
 
         <TextView
             android:id="@+id/text_view_2"
@@ -133,8 +131,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/zero"
-            android:inputType="numberDecimal"
-            android:autofillHints="" />
+            android:inputType="numberDecimal" />
 
         <TextView
             android:id="@+id/text_view_3"
@@ -148,8 +145,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/zero"
-            android:inputType="numberDecimal"
-            android:autofillHints="" />
+            android:inputType="numberDecimal" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -165,8 +161,7 @@
                 android:background="@drawable/bg_button"
                 android:onClick="hitung"
                 android:text="@string/hitung"
-                android:textColor="@android:color/white"
-                tools:ignore="UsingOnClickInXml" />
+                android:textColor="@android:color/white" />
 
         </LinearLayout>
 
