@@ -1,6 +1,5 @@
 package com.example.tugasteknologibergerak.BangunDatar;
 
-import com.google.android.material.math.MathUtils;
 
 public class Lingkaran {
     public double jari_jari;
@@ -13,8 +12,6 @@ public class Lingkaran {
     }
 
     public double hitung_kelilingg() {
-        double a = 3.141592653* 2.0 * jari_jari;
-
-        return a;
+        return 3.141592653* 2.0 * jari_jari;
     }
 }
