@@ -1,5 +1,9 @@
 package com.example.tugasteknologibergerak;
 
+import static com.example.tugasteknologibergerak.R.id.radio_hitung_keliling;
+import static com.example.tugasteknologibergerak.R.id.radio_hitung_luas;
+
+import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.view.Gravity;
 import android.view.View;
@@ -13,6 +17,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.tugasteknologibergerak.BangunDatar.Segitiga.KelilingSegitiga;
 import com.example.tugasteknologibergerak.BangunDatar.Segitiga.LuasSegitiga;
+
+import java.util.Objects;
 
 public class HitungSegitigaActivity extends AppCompatActivity {
 
@@ -47,16 +53,14 @@ public class HitungSegitigaActivity extends AppCompatActivity {
         btnHitung.setVisibility(View.INVISIBLE);
         txtHasil.setVisibility(View.INVISIBLE);
 
-        getSupportActionBar().setTitle("Segitiga");
+        Objects.requireNonNull(getSupportActionBar()).setTitle("Segitiga");
     }
 
+    @SuppressLint("NonConstantResourceId")
     public void onRadioButtonClicked(View view) {
-        // Is the button now checked?
         boolean checked = ((RadioButton) view).isChecked();
-
-        // Check which radio button was clicked
         switch (view.getId()) {
-            case R.id.radio_hitung_luas:
+            case radio_hitung_luas:
                 if (checked) {
                     txtView1.setText(getString(R.string.alas));
                     txtView2.setText(getString(R.string.tinggi));
@@ -77,7 +81,7 @@ public class HitungSegitigaActivity extends AppCompatActivity {
                     txtHasil.setText(getString(R.string.hasil));
                     break;
                 }
-            case R.id.radio_hitung_keliling:
+            case radio_hitung_keliling:
                 if (checked) {
                     txtView1.setText(getString(R.string.sisiA));
                     txtView2.setText(getString(R.string.sisiB));
@@ -104,21 +108,18 @@ public class HitungSegitigaActivity extends AppCompatActivity {
     }
 
 
+    @SuppressLint("SetTextI18n")
     public void hitung(View view) {
 
         String buttonText = btnHitung.getText().toString();
-        if (buttonText == getString(R.string.hitung_luas)) {
+        if (buttonText.equals(getString(R.string.hitung_luas))) {
             try {
                 alas = Double.parseDouble(edtText1.getText().toString());
                 tinggi = Double.parseDouble(edtText2.getText().toString());
                 LuasSegitiga luasSegitiga = new LuasSegitiga(alas, tinggi);
-                txtHasil.setText(String.valueOf("Hasil :\nLuas = " + luasSegitiga.hitung_luas()));
+                txtHasil.setText("Hasil :\nLuas = " + luasSegitiga.hitung_luas());
 
 
-                //panjang = Double.parseDouble(edtPanjang.getText().toString());
-                //lebar = Double.parseDouble(edtLebar.getText().toString());
-                //luas = panjang * lebar;
-                //txtLuas.setText(String.valueOf("Luas = " + luas));
 
             } catch (Exception e) {
                 //jika salah satu kolom tidak diisi
@@ -134,13 +135,8 @@ public class HitungSegitigaActivity extends AppCompatActivity {
                 sisiB = Double.parseDouble(edtText2.getText().toString());
                 sisiC = Double.parseDouble(edtText3.getText().toString());
                 KelilingSegitiga kelilingSegitiga = new KelilingSegitiga(sisiA,sisiB,sisiC);
-                txtHasil.setText(String.valueOf("Hasil :\nKeliling = " + kelilingSegitiga.hitung_keliling()));
+                txtHasil.setText("Hasil :\nKeliling = " + kelilingSegitiga.hitung_keliling());
 
-
-                //panjang = Double.parseDouble(edtPanjang.getText().toString());
-                //lebar = Double.parseDouble(edtLebar.getText().toString());
-                //luas = panjang * lebar;
-                //txtLuas.setText(String.valueOf("Luas = " + luas));
 
             } catch (Exception e) {
                 //jika salah satu kolom tidak diisi

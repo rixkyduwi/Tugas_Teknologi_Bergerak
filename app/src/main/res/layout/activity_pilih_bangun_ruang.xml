@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/activity_pilih_bangun_ruang"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
@@ -13,7 +12,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Pilih"
+        android:text="@string/pilih"
         android:textAlignment="center"
         android:textAllCaps="true"
         android:textColor="@color/colorPrimaryDark"
@@ -23,7 +22,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Bangun Ruang"
+        android:text="@string/ruang"
         android:textAlignment="center"
         android:textAllCaps="true"
         android:textColor="@color/colorPrimaryDark"
@@ -33,7 +32,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="16dp"
-        android:text="Farid Ari Wibowo_A12.2019.06251"
+        android:text="@string/lengkap"
         android:textAlignment="center"
         android:textAllCaps="true"
         android:textColor="@color/colorPrimaryDark"
@@ -58,9 +57,10 @@
             android:layout_gravity="center"
             android:background="@drawable/kubus"
             android:onClick="kubus"
-            android:text="kubus"
+            android:text="@string/kubus"
             android:textAlignment="center"
             android:gravity="center"
-            android:textColor="@android:color/white" />
+            android:textColor="@android:color/white"
+            tools:ignore="InefficientWeight,UsingOnClickInXml" />
     </LinearLayout>
 </LinearLayout>

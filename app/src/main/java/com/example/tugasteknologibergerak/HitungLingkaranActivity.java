@@ -1,5 +1,6 @@
 package com.example.tugasteknologibergerak;
 
+import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.view.Gravity;
 import android.view.View;
@@ -10,6 +11,8 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.tugasteknologibergerak.BangunDatar.Lingkaran;
+
+import java.util.Objects;
 
 public class HitungLingkaranActivity extends AppCompatActivity {
     EditText edtJariJari;
@@ -30,20 +33,17 @@ public class HitungLingkaranActivity extends AppCompatActivity {
         edtJariJari = (EditText) findViewById(R.id.edt_jari_lingkaran);
         txtHasil = (TextView) findViewById(R.id.txt_hasil_lingkaran);
 
-        getSupportActionBar().setTitle("Lingkaran");
+        Objects.requireNonNull(getSupportActionBar()).setTitle("Lingkaran");
     }
 
+    @SuppressLint("SetTextI18n")
     public void hitung_luas(View view) {
         try {
             jari = Double.parseDouble(edtJariJari.getText().toString());
             Lingkaran lingkaran = new Lingkaran(jari);
-            txtHasil.setText(String.valueOf("Hasil :\nLuas = " + lingkaran.hitung_luas()));
+            txtHasil.setText("Hasil :\nLuas = " + lingkaran.hitung_luas());
 
 
-            //panjang = Double.parseDouble(edtPanjang.getText().toString());
-            //lebar = Double.parseDouble(edtLebar.getText().toString());
-            //luas = panjang * lebar;
-            //txtLuas.setText(String.valueOf("Luas = " + luas));
 
         } catch (Exception e) {
             //jika salah satu kolom tidak diisi
@@ -55,17 +55,14 @@ public class HitungLingkaranActivity extends AppCompatActivity {
         }
     }
 
+    @SuppressLint("SetTextI18n")
     public void hitung_lingkaran_keliling(View view) {
         try {
             jari = Double.parseDouble(edtJariJari.getText().toString());
             Lingkaran lingkaran = new Lingkaran(jari);
-            txtHasil.setText(String.valueOf("Hasil :\nKeliling = "+lingkaran.hitung_kelilingg()));
+            txtHasil.setText("Hasil :\nKeliling = " + lingkaran.hitung_kelilingg());
 
 
-            //panjang = Double.parseDouble(edtPanjang.getText().toString());
-            //lebar = Double.parseDouble(edtLebar.getText().toString());
-            //luas = panjang * lebar;
-            //txtLuas.setText(String.valueOf("Luas = " + luas));
 
         } catch (Exception e) {
             //jika salah satu kolom tidak diisi

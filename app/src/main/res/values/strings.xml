@@ -1,6 +1,5 @@
 <resources>
     //lain-lain
-    <string name="app_name">Hitung Bangun Ruang dan Datar</string>
     <string name="text_gambar">Gambar</string>
 
     //perhitungan
@@ -14,8 +13,6 @@
     <string name="hitung">Hitung</string>
 
     //atribute
-    <string name="panjang">Panjang</string>
-    <string name="lebar">Lebar</string>
     <string name="tinggi">Tinggi</string>
     <string name="alas">Alas</string>
     <string name="jari_jari">Jari - Jari</string>
@@ -24,48 +21,38 @@
     <string name="sisiA">Sisi A</string>
     <string name="sisiB">Sisi B</string>
     <string name="sisiC">Sisi C</string>
-    <string name="sisiAB">Sisi AB</string>
-    <string name="sisiCD">Sisi CD</string>
-    <string name="sisiBC">Sisi BC</string>
-    <string name="sisiDA">Sisi DA</string>
-    <string name="diagonal_horizontal">Diagonal Horizontal</string>
-    <string name="diagonal_vertical">Diagonal Vertikal</string>
-    <string name="sisi_satu">Sisi 1</string>
-    <string name="sisi_dua">Sisi 2</string>
     <string name="rusuk">Rusuk</string>
     <string name="luas_permukaan">Luas Permukaan</string>
 
     //bangun datar
     <string name="bangun_datar">Bangun Datar</string>
-    <string name="persegi_panjang">Persegi Panjang</string>
     <string name="lingkaran">Lingkaran</string>
     <string name="segitiga">Segitiga</string>
     <string name="persegi">Persegi</string>
-    <string name="trapesium">Trapesium</string>
-    <string name="layang_layang">Layang Layang</string>
-    <string name="belah_ketupat">Belah Ketupat</string>
 
     //bangun ruang
-    <string name="balok">Balok</string>
-    <string name="bola">Bola</string>
-    <string name="tabung">Tabung</string>
-    <string name="kubus">Kubus</string>
-    <string name="luasKerucut">Kerucut</string>
-    <string name="default_text">Default Text</string>
-    <string name="polymorphism">Polymorphism</string>
-    <string name="garis_lukis">Garis Lukis</string>
     <string name="bangun_ruang">Bangun Ruang</string>
 
     //other
-    <string name="share">Share</string>
     <string name="masukan_nomor">Masukan Semua Nomor Yang Akan Dihitung</string>
-    <string name="jajar_genjang">Jajar Genjang</string>
-    <string name="hitung_luas_alas">Hitung Luas Alas</string>
-    <string name="hitung_luas_sisi_tegak">Hitung Luas Sisi Tegak</string>
-    <string name="luas_alas">Luas Alas :</string>
-    <string name="luas_sisi_tegak">Luas Sisi Tegak :</string>
-    <string name="luas_limas">Luas Limas :</string>
-    <string name="limas_segi_empat">Limas Segi Empat</string>
-    <string name="hitung_luas_limas">Hitung Luas Limas</string>
+    <string name="nama">Farid ari wibowo</string>
+    <string name="nim">nim: A12.209.06251</string>
+    <string name="lkubus">6 x ( rusuk x rusuk )</string>
+    <string name="_12_x_rusuk">12 x rusuk</string>
+    <string name="rusuk_x_rusuk_x_rusuk">rusuk x rusuk x rusuk</string>
+    <string name="gambarkubus">gambarkubus</string>
+    <string name="phi_x_r_x_r">Phi x (r x r)</string>
+    <string name="phi_x_2_x_r">Phi x (2 x r)</string>
+    <string name="spersegi">sisi x sisi</string>
+    <string name="kpersegi">4 x sisi</string>
+    <string name="sgtg">gambarsegitiga</string>
+    <string name="lsegitiga">( alas x tinggi ) / 2</string>
+    <string name="Ksegitiga">sisi A + sisi B + sisi C</string>
+    <string name="pilih">Pilih</string>
+    <string name="datar">Bangun Datar</string>
+    <string name="lengkap">Farid Ari Wibowo_A12.2019.06251</string>
+    <string name="ruang">Bangun Ruang</string>
+    <string name="kubus">kubus</string>
+    <string name="judul">Tugas Teknologi Bergerak Bangun Ruang dan Datar</string>
 
 </resources>

@@ -1,5 +1,6 @@
 package com.example.tugasteknologibergerak;
 
+import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.view.Gravity;
 import android.view.View;
@@ -10,6 +11,8 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.tugasteknologibergerak.BangunRuang.Kubus;
+
+import java.util.Objects;
 
 public class HitungKubusActivity extends AppCompatActivity {
 
@@ -30,20 +33,15 @@ public class HitungKubusActivity extends AppCompatActivity {
         edtRusuk = (EditText) findViewById(R.id.edt_rusuk);
         txtHasil = (TextView) findViewById(R.id.txt_hasil);
 
-        getSupportActionBar().setTitle("Kubus");
+        Objects.requireNonNull(getSupportActionBar()).setTitle("Kubus");
     }
 
+    @SuppressLint("SetTextI18n")
     public void hitung_luas(View view) {
         try {
             rusuk = Double.parseDouble(edtRusuk.getText().toString());
             Kubus kubus = new Kubus(rusuk);
-            txtHasil.setText(String.valueOf("Hasil :\nLuas = " + kubus.hitung_luas()));
-
-
-            //panjang = Double.parseDouble(edtPanjang.getText().toString());
-            //lebar = Double.parseDouble(edtLebar.getText().toString());
-            //luas = panjang * lebar;
-            //txtLuas.setText(String.valueOf("Luas = " + luas));
+            txtHasil.setText("Hasil :\nLuas = " + kubus.hitung_luas());
 
         } catch (Exception e) {
             //jika salah satu kolom tidak diisi
@@ -55,17 +53,13 @@ public class HitungKubusActivity extends AppCompatActivity {
         }
     }
 
+    @SuppressLint("SetTextI18n")
     public void hitung_keliling(View view) {
         try {
             rusuk = Double.parseDouble(edtRusuk.getText().toString());
             Kubus kubus = new Kubus(rusuk);
-            txtHasil.setText(String.valueOf("Hasil :\nKeliling = " + kubus.hitung_keliling()));
+            txtHasil.setText("Hasil :\nKeliling = " + kubus.hitung_keliling());
 
-
-            //panjang = Double.parseDouble(edtPanjang.getText().toString());
-            //lebar = Double.parseDouble(edtLebar.getText().toString());
-            //luas = panjang * lebar;
-            //txtLuas.setText(String.valueOf("Luas = " + luas));
 
         } catch (Exception e) {
             //jika salah satu kolom tidak diisi
@@ -77,17 +71,12 @@ public class HitungKubusActivity extends AppCompatActivity {
         }
     }
 
+    @SuppressLint("SetTextI18n")
     public void hitung_volume(View view) {
         try {
             rusuk = Double.parseDouble(edtRusuk.getText().toString());
             Kubus kubus = new Kubus(rusuk);
-            txtHasil.setText(String.valueOf("Hasil :\nVolume = " + kubus.hitung_volume()));
-
-
-            //panjang = Double.parseDouble(edtPanjang.getText().toString());
-            //lebar = Double.parseDouble(edtLebar.getText().toString());
-            //luas = panjang * lebar;
-            //txtLuas.setText(String.valueOf("Luas = " + luas));
+            txtHasil.setText("Hasil :\nVolume = " + kubus.hitung_volume());
 
         } catch (Exception e) {
             //jika salah satu kolom tidak diisi

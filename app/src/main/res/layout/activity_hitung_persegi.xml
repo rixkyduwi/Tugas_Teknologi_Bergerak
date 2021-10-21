@@ -29,27 +29,25 @@
                 android:src="@drawable/persegi" />
 
             <TableLayout
-                android:id="@+id/table"
                 android:layout_width="match_parent"
                 android:layout_height="150dp"
                 android:layout_toEndOf="@+id/gambar"
                 android:background="@android:color/white"
                 android:padding="15dp"
-                android:layout_marginLeft="8dp">
+                android:layout_marginStart="8dp">
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="0dp"
                     android:layout_weight="1"
-                    android:text="Farid ari wibowo" />
+                    android:text="@string/nama" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="0dp"
                     android:layout_weight="1"
-                    android:text="nim: A12.209.06251"
-                    android:textSize="12dp" />
+                    android:text="@string/nim"
+                    android:textSize="12sp" />
                 <TextView
-                    android:id="@+id/luas"
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
                     android:layout_weight="1"
@@ -57,14 +55,12 @@
                     android:textStyle="bold" />
 
                 <TextView
-                    android:id="@+id/rumus_luas"
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
                     android:layout_weight="1"
-                    android:text="sisi x sisi " />
+                    android:text="@string/spersegi" />
 
                 <TextView
-                    android:id="@+id/volume"
                     android:layout_width="wrap_content"
                     android:layout_height="0dp"
                     android:layout_weight="1"
@@ -75,7 +71,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="0dp"
                     android:layout_weight="1"
-                    android:text="4 x sisi" />
+                    android:text="@string/kpersegi" />
             </TableLayout>
         </RelativeLayout>
 
@@ -91,7 +87,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/zero"
-            android:inputType="numberDecimal" />
+            android:inputType="numberDecimal"
+            android:autofillHints="0" />
 
 
         <LinearLayout
@@ -100,7 +97,6 @@
             android:orientation="horizontal">
 
             <Button
-                android:id="@+id/btn_hitung_luas"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_margin="4dp"
@@ -108,10 +104,11 @@
                 android:background="@drawable/bg_button"
                 android:onClick="hitung_luas"
                 android:text="@string/hitung_luas"
-                android:textColor="@android:color/white" />
+                android:textColor="@android:color/white"
+                style="?android:attr/buttonBarButtonStyle"
+                tools:ignore="UsingOnClickInXml" />
 
             <Button
-                android:id="@+id/btn_hitung_keliling"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_margin="4dp"
@@ -119,7 +116,9 @@
                 android:background="@drawable/bg_button"
                 android:onClick="hitung_keliling"
                 android:text="@string/hitung_keliling"
-                android:textColor="@android:color/white" />
+                android:textColor="@android:color/white"
+                style="?android:attr/buttonBarButtonStyle"
+                tools:ignore="UsingOnClickInXml" />
         </LinearLayout>
 
         <TextView

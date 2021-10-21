@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <LinearLayout xmlns:tools="http://schemas.android.com/tools"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
@@ -11,23 +12,23 @@
         android:paddingLeft="@dimen/activity_horizontal_margin"
         android:paddingRight="@dimen/activity_horizontal_margin"
         android:paddingTop="@dimen/activity_vertical_margin"
-        tools:context="com.newbie.irhamdzuhri.HitungBangunRuangDanDatar.MainActivity">
+        tools:context="com.example.tugasteknologibergerak.MainActivity">
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Tugas Teknologi Bergerak Bangun Ruang dan Datar"
+            android:text="@string/judul"
             android:textAlignment="center"
             android:textAllCaps="true"
             android:textColor="@color/colorPrimaryDark"
-            android:textSize="20dp"
+            android:textSize="20sp"
             android:textStyle="bold" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="16dp"
-            android:text=" Farid Ari Wibowo_A12.2019.06251"
+            android:text="@string/lengkap"
             android:textAlignment="center"
             android:textAllCaps="true"
             android:textColor="@color/colorPrimaryDark"
@@ -48,7 +49,8 @@
             android:background="@drawable/bg_button2"
             android:onClick="pilihBangunRuang"
             android:text="@string/bangun_ruang"
-            android:textColor="@android:color/white" />
+            android:textColor="@android:color/white"
+            tools:ignore="UsingOnClickInXml" />
 
 
         <Button
@@ -59,7 +61,8 @@
             android:background="@drawable/bg_button2"
             android:onClick="pilihBangunDatar"
             android:text="@string/bangun_datar"
-            android:textColor="@android:color/white"/>
+            android:textColor="@android:color/white"
+            tools:ignore="UsingOnClickInXml" />
 
         <View
             android:layout_width="match_parent"
